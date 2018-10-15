@@ -3,15 +3,14 @@ import PropTypes from "prop-types"
 import { Input, Button, Dropdown, Divider } from "semantic-ui-react"
 import {DayPicker} from "react-day-picker"
 import "react-day-picker/lib/style.css"
-import "react-datepicker/dist/react-datepicker.css"
 
 const cityOptions = [
   {
-    text: "High",
+    text: "High Cost",
     value: "high"
   },
   {
-    text: "Low",
+    text: "Low Cost",
     value: "low"
   }
 ] 
@@ -49,7 +48,7 @@ class NewProject extends Component {
         <Input placeholder="Project Name" onChange={(e) => this.setState({projectName: e.target.value})}/>
         <DayPicker selectedDays={startDate} onDayClick={(e) => this.handleDate(e, "startDate")}/>
         <DayPicker selectedDays={endDate}   onDayClick={(e) => this.handleDate(e, "endDate")}/>
-        <Dropdown placeholder='Select City Type' options={cityOptions} onChange={this.handleSelection}/>
+        <Dropdown className='city-selector' placeholder='Select City Type' options={cityOptions} onChange={this.handleSelection}/>
         <Divider hidden/>
         <Button 
           onClick={() => addProjectToState({projectName, cityType, startDate, endDate})}

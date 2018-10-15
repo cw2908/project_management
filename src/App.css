@@ -35,3 +35,7 @@ ul {
 button {
   display: block;
 }
+
+.city-selector {
+  width: 10em !important;
+}
