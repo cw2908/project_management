@@ -27,7 +27,6 @@ class NewProject extends Component {
   }
 
   handleDate (date, type) {
-    console.log({date},{type})
     let obj = {}
     obj[type] = date
     this.setState(obj)
@@ -35,14 +34,10 @@ class NewProject extends Component {
   handleSelection (e, {value }) {this.setState({cityType: value })}
 
   render() {
-    console.log({props: this.props})
     const {addProjectToState} = this.props
     const {projectName, cityType, startDate, endDate} = this.state
     // Simple Validation
     let formValidated = !(projectName && cityType && startDate && endDate && startDate <= endDate)
-    console.log({formValidated})
-    console.log({startDate})
-    console.log({endDate})
     return (
       <div className='new-project-container'>
         <Input placeholder="Project Name" onChange={(e) => this.setState({projectName: e.target.value})}/>

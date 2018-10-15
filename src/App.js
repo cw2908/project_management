@@ -19,15 +19,15 @@ const initialProps = {
     // addProject("Project 3", "low", new Date(2015,9,6), new Date(2015, 9, 8)),
 
     // Set 3
-    addProject("Project 1", "low", new Date(2015,9,1), new Date(2015, 9, 3)),
-    addProject("Project 2", "high", new Date(2015,9,5), new Date(2015, 9, 7)),
-    addProject("Project 3", "high", new Date(2015,9,8), new Date(2015, 9, 8)),
+    // addProject("Project 1", "low", new Date(2015,9,1), new Date(2015, 9, 3)),
+    // addProject("Project 2", "high", new Date(2015,9,5), new Date(2015, 9, 7)),
+    // addProject("Project 3", "high", new Date(2015,9,8), new Date(2015, 9, 8)),
     
     // Set 4
-    // addProject("Project 1", "low", new Date(2015,9,1), new Date(2015, 9, 1)),
-    // addProject("Project 2", "low", new Date(2015,9,1), new Date(2015, 9, 1)),
-    // addProject("Project 3", "high", new Date(2015,9,2), new Date(2015, 9, 2)),
-    // addProject("Project 4", "high", new Date(2015,9,2), new Date(2015, 9, 3)),
+    addProject("Project 1", "low", new Date(2015,9,1), new Date(2015, 9, 1)),
+    addProject("Project 2", "low", new Date(2015,9,1), new Date(2015, 9, 1)),
+    addProject("Project 3", "high", new Date(2015,9,2), new Date(2015, 9, 2)),
+    addProject("Project 4", "high", new Date(2015,9,2), new Date(2015, 9, 3)),
   ]
 }
 
