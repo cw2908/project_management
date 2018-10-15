@@ -23,7 +23,7 @@ https://chris-pm-tool.herokuapp.com/
 - Local storage in the browser could also be implemented to persist some data between sessions.
 
 
-#### Notes
+#### Other Notes
 
 Example project sets from requirements available in `App.js` as `initialProps`
 
