@@ -1,5 +1,6 @@
 import React, { Component } from "react"
 import PropTypes from "prop-types"
+import { Table } from "semantic-ui-react"
 
 
 export default class DailyCost extends Component {
@@ -9,9 +10,11 @@ export default class DailyCost extends Component {
     let formattedDate = projectDay.date.toLocaleDateString()
     let cost = JSON.stringify(projectDay.dateCost) || "0"
     return (
-      <li>
-        {formattedDate} - ${cost}
-      </li>
+      
+      <Table.Row>
+        <Table.Cell>{formattedDate}</Table.Cell>
+        <Table.Cell>${cost}</Table.Cell>
+      </Table.Row>
     )
   }
 }

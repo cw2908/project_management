@@ -1,6 +1,6 @@
 import React, { Component } from "react"
 import PropTypes from "prop-types"
-import { Card } from "semantic-ui-react"
+import { Card, Table } from "semantic-ui-react"
 import "./App.css"
 import Project from "./Project.js"
 import DailyCost from "./DailyCost.js"
@@ -78,11 +78,24 @@ class App extends Component {
         <Card.Group>
           {projectItems}
         </Card.Group>
-        <ul className='project-daily-cost'>
-          {dailyCosts}
-        </ul>
-        <p>Total Days: {costData.totalDays}</p>
-        <p>Total Cost: ${JSON.stringify(costData.projectSetCost)}</p>
+  
+        <Table celled compact>  
+          <Table.Header>
+            <Table.Row>
+              <Table.HeaderCell>Date</Table.HeaderCell>
+              <Table.HeaderCell>Cost</Table.HeaderCell>
+            </Table.Row>
+          </Table.Header>
+          <Table.Body>
+            {dailyCosts}
+          </Table.Body>
+          <Table.Footer>
+            <Table.Row>
+              <Table.HeaderCell>Total Days: {costData.totalDays}</Table.HeaderCell>
+              <Table.HeaderCell>Total Cost: ${JSON.stringify(costData.projectSetCost)}</Table.HeaderCell>
+            </Table.Row>
+          </Table.Footer>
+        </Table>
       </div>
     )
   }
