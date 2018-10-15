@@ -24,6 +24,14 @@ ul {
   padding: 0 2em 0 2em;
 }
 
-.project-daily-cost li {
-  display: inline
+.project-container__ul li div{
+  margin: 0 0 0 0;
+}
+
+.ui.cards {
+  justify-content: center
+}
+
+button {
+  display: block;
 }
