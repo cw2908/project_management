@@ -14,6 +14,7 @@ https://chris-pm-tool.herokuapp.com/
 - Use popular open source projects where possible.
 - React apps do not necessarily require back end, can be deployed easily on different platforms (including native mobile apps), provides lots of options for future enhancements and will work on the vast majority of browsers. 
 - Tests implemented through jest `yarn test`
+- Deployed as static build
 
 
 ## Implementation Choices
