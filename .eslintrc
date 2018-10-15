@@ -1,50 +1,45 @@
 {
-  "env": {
-      "browser": true,
-      "commonjs": true,
-      "es6": true,
-      "jquery": true
-  },
-  "extends": [
-      "eslint:recommended"
-      ,"plugin:react/recommended",
-      "plugin:jest/recommended"
-  ],
-  "parserOptions": {
-      "ecmaFeatures": {
-          "experimentalObjectRestSpread": true,
-          "jsx": true
-      },
-      "sourceType": "module"
-  },
-  "plugins": [
-      "react",
-      "jest"
-  ],
-  "rules": {
-      "indent": [
-          "error",
-          2
-      ],
-      "linebreak-style": [
-          "error",
-          "unix"
-      ],
-      "quotes": [
-          "error",
-          "double"
-      ],
-      "semi": [
-          "error",
-          "never"
-      ],
-      "jsx-uses-vars": [
-          "never"
-      ],
-      "jest/no-disabled-tests": "warn",
-      "jest/no-focused-tests": "error",
-      "jest/no-identical-title": "error",
-      "jest/prefer-to-have-length": "warn",
-      "jest/valid-expect": "error"
-  }
+    "env": {
+        "browser": true,
+        "commonjs": true,
+        "es6": true,
+        "jquery": true
+    },
+    "extends": [
+        "eslint:recommended",
+        "plugin:react/recommended",
+        "plugin:jest/recommended"
+    ],
+    "parserOptions": {
+        "ecmaFeatures": {
+            "experimentalObjectRestSpread": true,
+            "jsx": true
+        },
+        "sourceType": "module"
+    },
+    "plugins": [
+        "react"
+    ],
+    "rules": {
+        "indent": [
+            "error",
+            2
+        ],
+        "linebreak-style": [
+            "error",
+            "unix"
+        ],
+        "quotes": [
+            "error",
+            "double"
+        ],
+        "semi": [
+            "error",
+            "never"
+        ],
+        "jsx-uses-vars": [
+            "never"
+        ],
+        "no-console": "off"
+    }
 }
